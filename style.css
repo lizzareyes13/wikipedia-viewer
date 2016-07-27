@@ -1,0 +1,9 @@
+/*(whatever is written before the brackets is knows as the selector)*/
+body{
+  background-color: #AAAAAA;
+}
+
+#search{
+  display: block;
+  margin: 0 auto;
+}
