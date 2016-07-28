@@ -3,18 +3,42 @@
 <head>
 <title>Wiki search Viewer</title>
 <link rel="stylesheet" href="style.css" />
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" rel="stylesheet"/>
 </head>
 
 <body>
-  <div id="searchContainer">
+  <!--<div class="container" id="searchContainer">
+    <div class="row">
+      <div class="col-md-6">
+        <input id="searchBox" name="wiki" type="text"/>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <button id="searchButton" type="submit">Search</button>
+      </div>
+    </div>
+  </div>-->
 
-    <input id="searchBox" name="wiki" type="text" />
-    <button id="searchButton" type="submit">Search</button>
-
+<div class="container" id="searchContainer" >
+  <div class="row">
+        <div class="col-md-6">
+    		<h2 id="h2Txt">Wiki-Search</h2>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input id="searchBox" name="wiki" type="text" class="form-control input-lg" placeholder="what are you looking for?" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>Search
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
   </div>
+</div>
 
   <div id="searchResults">
-    
+
   </div>
 
   <script src="prod.js"></script>
